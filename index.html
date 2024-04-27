@@ -11,41 +11,67 @@
     <meta property="og:url" content>
     <meta property="og:type" content>
     <meta property="og:title" content="homepage for hivecare website">
-    <meta property="og:description" content="This is the official homepage for hivecare">
+    <meta property="og:description"
+      content="This is the official homepage for hivecare">
     <meta property="og:image" content>
     <meta name="twitter:card" content="summary"> <!-- Important-->
     <meta name="twitter:title" content><!-- Important-->
     <meta name="twitter:description" content>
     <meta name="twitter:image" content>
-    <script src="scripts/test.js" defer></script>
-    <link rel="stylesheet" href="text.css">
+    <!-- <script src="scripts/test.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="text.css"> -->
     <link rel="icon" href>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <header>
-      <div>
+    <header class="bg-primary-subtle">
+      <div class="nav justify-content-around">
         <a href="#">SUBSCRIBE TO OUR NEWSLETTER</a>
-        <img src="" alt="search icon">
+        <img src="/images/search-icon.svg" alt="search icon">
         <div>
-          <img src="" alt="instagram icon">
-          <img src="" alt="facebook icon">
-          <img src="" alt="linkedIn icon">
-          <img src="" alt="x or twitter icon">
+          <img src="/images/ig-icon.svg" alt="instagram icon">
+          <img src="/images/fb-icon.svg" alt="facebook icon">
+          <img src="/images/linkedin-icon.svg" alt="linkedIn icon">
+          <img src="/images/x-icon.svg" alt="x or twitter icon">
         </div>
       </div>
       <nav>
-        <a href=""></a>
-        <a href=""></a>
-        <img src="" alt="company_logo">
-        <a href=""></a>
-        <a href=""></a>I
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hive Care Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="images/hivecare.png" alt="hivecare logo" width="150px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About Us</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <div>
-        <p>Personal and Worklife Intertwined</p>
-        <h1>HIVE CARE!</h1>
+        <p class="text-body-secondary">Personal and Worklife Intertwined</p>
+        <h1 class="text-primary">HIVE CARE!</h1>
       </div>
       <div>
       </div>
