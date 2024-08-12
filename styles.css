@@ -145,7 +145,8 @@ footer .newsletter button {
     text-align: center;
 }
 
-.about-page h1, .about-page h2 {
+.about-page h1,
+.about-page h2 {
     color: #4CAF50;
 }
 
@@ -185,7 +186,8 @@ footer .newsletter button {
     margin-bottom: 20px;
 }
 
-.services-page h1, .services-page h2 {
+.services-page h1,
+.services-page h2 {
     color: #4CAF50;
 }
 
@@ -204,7 +206,8 @@ footer .newsletter button {
     margin: 10px 0;
 }
 
-.wellness-programs-page h1, .wellness-programs-page h2 {
+.wellness-programs-page h1,
+.wellness-programs-page h2 {
     color: #4CAF50;
 }
 
@@ -222,7 +225,9 @@ footer .newsletter button {
     margin-bottom: 20px;
 }
 
-.contact-page form input, .contact-page form textarea, .contact-page form button {
+.contact-page form input,
+.contact-page form textarea,
+.contact-page form button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -241,4 +246,24 @@ footer .newsletter button {
 
 .map {
     margin-top: 20px;
+}
+
+
+/* Blog List Page */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.blog-card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Blog Page */
+.blog-header-image {
+    width: 100%;
 }
