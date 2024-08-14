@@ -11,179 +11,274 @@
     </head>
     <body>
         <div class="bg-[url('public/images/office-worker-header.jpg')] w-full bg-cover">
-            <header class="absolute inset-x-0 top-0 z-50">
-                <nav class="flex items-center justify-end p-6 lg:px-8" aria-label="Global">
-                    <div class="flex lg:flex-1">
-                        <a href="index.html" class="-m-1.5 p-1.5">
-                            <span class="sr-only">Your Company</span>
-                            <img class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
-                        </a>
-                    </div>
-                    <div class="flex lg:hidden">
-                        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="hidden lg:flex lg:gap-x-12">
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Wellness Programs</a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a><a href="#" class="text-sm font-semibold leading-6 text-gray-900">Blogs</a> | <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Call Us<span aria-hidden="true"></span></a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Message <span aria-hidden="true"></span></a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-                    </div>
-                </nav>
-                <!-- Mobile menu, show/hide based on menu open state. -->
-                <div class="lg:hidden" role="dialog" aria-modal="true">
-                    <!-- Background backdrop, show/hide based on slide-over state. -->
-                    <div class="fixed inset-0 z-50"></div>
-                    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                        <div class="flex items-center justify-between">
-                            <a href="#" class="-m-1.5 p-1.5">
-                                <span class="sr-only">Your Company</span>
-                                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            <div class="shadow-inner backdrop-brightness-50">
+                <header class="absolute inset-x-0 top-0 z-50">
+                    <nav class="flex items-center justify-end p-6 lg:px-24" aria-label="Global">
+                        <div class="flex lg:flex-1">
+                            <a href="index.html" class="-m-1.5 p-1.5">
+                                <img loading="lazy" class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
                             </a>
-                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                <span class="sr-only">Close menu</span>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Open main menu</span>
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
                             </button>
                         </div>
-                        <div class="mt-6 flow-root">
-                            <div class="-my-6 divide-y divide-gray-500/10">
-                                <div class="space-y-2 py-6">
-                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                        <div class="hidden lg:flex lg:gap-x-4">
+                            <a href="index.html" class="text-sm font-semibold leading-6 text-white">Home</a>
+                            <a href="about.html" class="text-sm font-semibold leading-6 text-white">About Us</a>
+                            <a href="services.html" class="text-sm font-semibold leading-6 text-white">Services</a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Wellness Programs</a>
+                            <a href="contact.html" class="text-sm font-semibold leading-6 text-white">Contact Us</a>
+                            <a href="bloglist.html" class="text-sm font-semibold leading-6 text-white">Blogs</a>
+                            <span class="text-white"> | </span>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Call Us<span aria-hidden="true"></span></a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Message <span aria-hidden="true"></span></a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </nav>
+                    <div class="lg:hidden" role="dialog" aria-modal="true">
+                        <div class="fixed inset-0 z-50"></div>
+                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="-m-1.5 p-1.5">
+                                    <img loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                </a>
+                                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-gray-500/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Wellness Programs</a>
+                                    </div>
+                                    <div class="py-6">
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Call Us</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Message</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in </a>
+                                    </div>
                                 </div>
-                                <div class="py-6">
-                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="relative isolate px-6 pt-14 lg:px-24">
+                    <div class=" max-w-2xl py-32 sm:py-48 lg:py-32">
+                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                            <div class="relative py-1 text-sm leading-6 text-white">THE HIVECARE SOLUTION</div>
+                            <div>
+                                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Empowering Desk-Bound Employees to Live Healthier Lives</h1>
+                                <hr class="w-3/5 mt-4 mb-4">
+                                <p class="mt-2 mb-6 text-lg leading-8 text-white">Accessible, Personalised, and Engaging Workplace Wellness Solutions. </p>
+                                <a href="#" class="font-semibold text-black p-4 bg-[#D8FF9A] rounded-full">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <main>
+            <section class="grid grid-cols-3 p-24 gap-5">
+                <div class=" flex col-span-2 flex-col">
+                    <div class="flex gap-4 mb-8 flex-nowrap">
+                        <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                        <h2>ABOUT US</h2>
+                    </div>
+                    <p class="text-5xl mb-16 lg:pr-[200px]">Championing Wellness for a Healthier Workforce</p>
+                    <div class="border grid grid-flow-col rounded-md">
+                        <div class="rounded-md w-fit">
+                            <img class="w-fit h-[256px] rounded-md" src="public/images/fortune.jpeg" alt="Fortune Eshun, CEO">
+                        </div>
+                        <div class="p-4">
+                            <h2 class="font-bold text-xl mb-6">Welcome Message from Our CEO</h2>
+                            <p class="mb-6">We re here to help you live a healthier, more productive life. Thank you for joining us in our mission to create a healthier workforce in Accra.</p>
+                            <p class="font-semibold mb-1">Fortune Eshun</p>
+                            <span class="text-[#6BA50F]">CEO, HiveCare</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-evenly">
+                    <h3 class="p-6 bg-[#D8FF9A] rounded-3xl"> Our Mission </h3>
+                    <div class="flex flex-col p-6">
+                        <div class="mb-5">
+                            <div class="flex gap-4">
+                                <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                                <h2>Empowerment</h2>
+                            </div>
+                            <p>Equip desk-bound employees with the tools and resources to take control of their health and well-being.</p>
+                        </div>
+                        <div class="mb-5">
+                            <div class="flex gap-4">
+                                <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                                <h2>Accessibility</h2>
+                            </div>
+                            <p>Provide personalised wellness solutions that are easy to access and integrate into daily work life. </p>
+                        </div>
+                        <div class="mb-5">
+                            <div class="flex gap-4">
+                                <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                                <h2>Impact</h2>
+                            </div>
+                            <p>Foster a healthier, more productive workforce in Accra, contributing to overall employee satisfaction and performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="grid grid-cols-2 p-32 bg-[#DDEADE] gap-10">
+                <div>
+                    <h1 class="text-5xl mb-16">Our Wellness Programs</h1>
+                    <div class="bg-slate-50 p-6 rounded-3xl mb-16">
+                        <h2 class="text-2xl mb-4">Personalised Wellness Plans</h2>
+                        <p> HiveCare creates customised wellness plans tailored to the unique needs of your organisation and its employees. Our programmes combine health screenings, nutrition counselling, fitness classes, and stress management workshops.</p>
+                    </div>
+                    <div class="mb-16 pl-6">
+                        <h2 class="text-2xl mb-4">How We Develop Personalised Wellness Plans</h2>
+                        <p>We collaborate closely with each organisation to understand their specific needs and challenges. Our health coaches offer ongoing support to keep employees on track with their wellness goals</p>
+                    </div>
+                    <div class="pl-6">
+                        <h2 class="text-2xl mb-4">Benefits for Employees and Organisations</h2>
+                        <p>Our wellness programmes deliver significant benefits, including improved health and well-being, increased productivity, and reduced absenteeism. They also enhance company culture and employee satisfaction.s</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around">
+                    <div class="flex justify-end">
+                        <a class="p-4 justify-end text-[#B8FF48] bg-[#222222] rounded-full" href="">LEARN MORE</a>
+                    </div>
+                    <div class="flex rounded-md">
+                        <img class="rounded-md" src="public/images/wellness-app.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="grid grid-cols-2 p-24 bg-[#EFF5F0] gap-10">
+                <div>
+                    <div class="flex gap-4 mb-8 flex-nowrap">
+                        <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                        <h2>OUR VALUE</h2>
+                    </div>
+                    <h1 class="text-5xl mb-16">HiveCare Guiding Principles</h1>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-row gap-5">
+                            <img class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
+                            <div>
+                                <h2 class="text-2xl mb-4">Compassion</h2>
+                                <p> We approach every interaction with empathy and understanding, recognising the unique challenges and needs of each individual. Our programmes are designed to support and uplift employees, fostering a caring and supportive environmen </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <img class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
+                            <div>
+                                <h2 class="text-2xl mb-4">Integrity</h2>
+                                <p>We operate with honesty and transparency in all our dealings. Our commitment to integrity ensures that our wellness solutions are trustworthy, reliable, and aligned with the highest ethical standards.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <img class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
+                            <div>
+                                <h2 class="text-2xl mb-4">Excellence</h2>
+                                <p>We strive for excellence in every aspect of our work, from the quality of our wellness programmes to the level of service we provide. Our dedication to continuous improvement drives us to deliver the best possible outcomes for our clients and their employees</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <img class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
+                            <div>
+                                <h2 class="text-2xl mb-4">Collaboration</h2>
+                                <p>We believe in the power of working together to achieve shared goals. By partnering closely with organisations and engaging employees in the wellness process, we create customised solutions that are effective and impactful</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="m-[0 auto]">
+                        <img class="rounded-md" src="public/images/teamwork.jpg" alt="Teamwork">
+                    </div>
+                </div>
+            </section>
+            <section class="grid p-32 gap-5">
+                <div class="grid grid-cols-2 auto-rows-auto">
+                    <div>
+                        <h1 class="text-5xl mb-2">Real Stories, Real Impact</h1>
+                        <p> HiveCare creates customised wellness plans tailored to the unique needs of your organisation and its employees. Our programmes combine health screenings, nutrition counselling, fitness classes, and stress management workshops.</p>
+                    </div>
+                    <div class="mt-4 lg:ml-[450px]">
+                        <a class="p-4 justify-end text-[#B8FF48] bg-[#222222] rounded-full" href="">SEE ALL</a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around">
+                    <div class="flex rounded-md">
+                        <p class="text-center font-extrabold text-3xl">Coming Soon!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-[url('public/images/office-gym.jpg')] w-full bg-cover">
+                <div class="relative isolate px-6 pt-14 lg:py-10 lg:px-10">
+                    <div class="max-w-2xl py-32 sm:py-48 lg:py-24 lg:px-5 mx-auto my-0 bg-[rgba(0,0,0,0.6)]">
+                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                            <div class="mx-auto my-0 flex gap-4 mb-8 flex-nowrap">
+                                <img class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                                <h2 class="text-white ">GET IN TOUCH</h2>
+                            </div>
+                            <div class="mx-auto my-0">
+                                <h1 class="text-5xl mb-10 text-white text-center">Begin Your Path To Wellness</h1>
+                                <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">We’re here to help! Whether you have inquiries about our wellness programmes, need assistance, or want to discuss how we can support your organisation, feel free to reach out.</p>
+                                <div class="mb-6 flex justify-center">
+                                    <a href="#" class="font-semibold text-black p-4 bg-[#D8FF9A] rounded-full">SCHEDULE A CONSULTATION</a>
+                                </div>
+                                <div class="flex justify-center">
+                                    <a class="p-2 justify-end text-sm text-[#B8FF48] bg-[#222222] rounded-full" href="">CONTACT US</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <div class="relative isolate px-6 pt-14 lg:px-8">
-                <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-                    <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-                </div> -->
-                <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"> Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                        <div class="mt-10 flex items-center justify-center gap-x-6">
-                            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-                </div>
-            </div>
-        </div>
-        <main>
-            <section class="main-banner">
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrv5rTZqM8GLA3EtEDo5f7Po-Tq6v6ZU1Q_HoDfxEqJYFphrtWu-jXjX71-8Vqd2nPlF0&usqp=CAU"
-                    alt="Happy, Healthy Employees">
-                <div class="banner-text">
-                    <h1>Empowering Desk-Bound Employees to Live Healthier Lives</h1>
-                    <p>Accessible, Personalized, and Engaging Workplace Wellness Solutions.</p>
-                    <button class="cta">Learn More</button>
-                </div>
-            </section>
-            <section class="about">
-                <h2>About HiveCare</h2>
-                <p>Brief overview of our mission, vision, and values.</p>
-                <button class="cta">About Us</button>
-            </section>
-            <section class="services">
-                <h2>Our Services</h2>
-                <div class="service-icons">
-                    <div class="service">
-                        <img
-                            src="data:image/jpeg;base64,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"
-                            alt="Health Screenings">
-                        <p>Health Screenings</p>
-                    </div>
-                    <div class="service">
-                        <img
-                            src="data:image/jpeg;base64,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"
-                            alt="Nutrition Counseling">
-                        <p>Nutrition Counseling</p>
-                    </div>
-                    <div class="service">
-                        <img
-                            src="data:image/jpeg;base64,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"
-                            alt="Fitness Classes">
-                        <p>Fitness Classes</p>
-                    </div>
-                    <div class="service">
-                        <img
-                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA0QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgQHAAIDAQj/xABEEAACAQMCBAQCBggCCAcAAAABAgMABBEFEgYhMUETIlFhFHEHMoGRocEVIzNCU7HR8HLhFhdSVFWSk6IkQ4KUstLx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAJhEAAwACAgEEAgIDAAAAAAAAAAECAxESITEEEyJBMlEUYTNScf/aAAwDAQACEQMRAD8AsTUJjJZ3I8Jh5D6ele2czNbQsc/UHXtUaW+s5beVYrlWYoenep1qipZQ75FXyDr8qJtHIlJKCuMZOOtb6a+6JMnoK5RNGF5SDOK4xbo9PEwPfnU9dPY+VvoPRPkVrPtbk2MVEtrhJP2Y5BcVIwTEDntmt5dAa0yNciJoXLQgnGOYqB+jLaVMmMDPvipd2H8Ngcmo6BwAMntQtbCVNeCBNoVu0qou5eXrUSbhyLP7Vh9maPrInjIrnHlPM1zlG5XKPk9qD2ob8G+9a+xaThyd0Mqyr15AjrUW50MYKNNhu+BTXYSSNEFYAbTjNDb85un21k+nx78Br1OR/YrScNxI++NvN+9nvWDS5I+QwRRuTcGzXLc+eY5Vtemxv6DWe19gs2MgxyxUu20aaeNnVkAU483LFTVfH7tFLVUe0KvtBZuXPFD/ABMbByequVsDnhidXZjdKR7dqUeKJtQsdT+B0u1abYAXd+hz6VZfxMls37FWB5YzS9xakPxVlPh0aQsr+H+FDWCJ+jsXqayPTZA4Y06TXLWWWZGtpICFkRjk7sfyqdbcORzXUsfjnCKDyXv70ycM2CraSuhw8xGXJ5nAqSbAwXkhSUBpEHlx796UsXy3ro681b1sW24Ttk+vdNj/AAitU4TtZUlaK5ZtoG3AHejmrWdx4O5JB5TkjHWhfDl6Pj7212Z+qSG+VUzijj4E1mvfkg3nC9kiqI53L4y6nFCNctNLs7CH4CCVrljh2k5gU7TaYscxu2uESJ1IC4zzpS4k84ijQhcKSR0zU+SOL6Q7FbqtbFGG3hkn2zvtJ6HGcmmO80a3vtfsoGySU2ybORIAz1oPYqovokMZcMwAGehzTP4bvxY7BsbIjgHnz5elZPb2Oy9R0SP9CtK/hzf9SvaIZuf4X/c39K9rOT/RLv8AsA6bEhKzxsssXMCQcxTdrZA0eHABI24qr+Fb26tY5GMm62kwHRuecdPlVry2cWo6bEjkqpVSMcj7V6WN8loHLPF7BiJK11bsqFEMefmalJKktpHbBjvduR7CtJ7Z08BVLHwweeeorXR7GSdFlZ9oViQB6ZpdTtmq1tMm6M7hrmInzRjBx61v8XL4RwTjFDrS48HiO6gU/tM/fjNaeDdlzIj4QsetK8yNr8yZJeTTQFo87VBya4XN5JDaLJnLkchXRdNuY7dyZ8o3YCumq2e62gghGCSAWPanqdTsRb76OOkzyX8o8QDy0VMHh5wetR9M0xrKfG/cGXPTFEZosIx3dBRSvApvyCIrxVUxgENuOSRyqHKQ8rGpV7qNpaxQvyJErCUt0AUZY/33oJbag87SeNHtdcM2O27JC/YMffXJynoZEVrZMlVSO1RXVV5itHmL965n1rqaGJM7qQcVNcSPYJ4O3eX79qHoR1pg0e08a3QsfU4rEBlXQD1a+OlW6PdfrZ2PJFpV1LVdR1F7eW4jWOxhl3/q/rHljrUvizXbV9Ze2mDlofIqKvU9TXCW6hv7SSOOMrDs5ADoaKFybTR0wolNeQ7pN7daWsspumlikO4K37vsKP2F2b15bkbwGwAGPMcqWYIjM8aupZQBj25UwcMSRLd3MDNllyQM9628U66Rjf2FDctPbSJt8y4HPvQGzt5LXV7qTYuWIXl6Yrrc3xbVwqhlzz2itEuPEF9eKCB4gAPptApPFKXoGXvWwlbRvcI5YKAp+q1KnGBh+Jj8UqHEfICjdlPNexM0cmxnfpjtQPiyBYbsRnzZjBDmkZd8SjB+YI0uIy6hbMgATxAWxRywnEXEt06oXCjHL3NBeHeWqw8yVBPl9aNcNwNf6pqPhsY2DeVsZ5A/50GFcq0O9S9Shn/TUv8Aw38RWVD/AEXe/wAdv+mf61lU+yQ8ysdGjZEZkk5bdzJ3z2p84G12K+026jkO6S3fBwScAjl+f3VTMesz214vhTLJGpJkwOqkn8qarbj6CyfxNK0aBLKR9hAGJJG9SRRxuXspy0qnSLcW9iaPGw/V9KiabqVrbaKs9w3hRKTlmOOeTVc3f0i3hjkSysY4WXI8WQlwCB0x86X9UvtQuvCN5eSMrBHSMlQoDDrgdKOr/RPGGt/IfrDVYr3iCS6hkyhm9ccv/wAp6syGtFYqehqp+B7KS51CVpAzRW4O8tyDkjkP5GrI0yaSTSo28Ujy4x9tLmdIPPlXJJBWVkFm24kdP511m8PKeU0IvnxZ/tc8x396keKoChpM0f1on5rZOWVPjVGT9St7l1eBgpJPoKDNcRfpH6//AJfrWzzxwxyySSYVQWJz0Ard67OV7ekV/rmpMtzGJV3pG77lzjcpfJz+AonpspYQw7WlnlUzztywm7pn5+g9KVroXWr6gbexhaV2Oce1OuiWEem2Yi3eJITukc/vH+lTYZdVs9DJWp0dfA2jJ5Vxddp61NY+XBzUC5cDsaqqdCJezbdjvTVw/KVgVQufJSWZh1JxTFw4Z5mbw32hFoJ8gZnpI4cRW0Xg3lw9vHuZMbto3CkSDw1VgAQvf51YfENpcNplw8kqt5c8qq2/umiglW3HMjHMd6LeqBxp60x9tGijHiysqgL1J9qE6JDc3Oq3bwqfAlkO3LYJyMZoBbw6tNGrXqSt3TsM9qsXSFVbZJJkPjgYYgdxR1a0Ma462ctEl+KT/wAWu26gZo2I5hsd815bBV0O5BJK+M+fvoTBqyadxFcWLRlo5j4sTfPkRXlzeM3Dd4Y943NIVwKmT0mZSXJBL/TrhvT8W4u42dDt24yRQHXtbsdbvd9lcRNGqhTsPeqQuJZBI3i5Lk8yepNEdGupYnMqyYZee3/bArbnlOjcb41stvhtIzqo2hiUjZic9qLcBX0cUt7cGVUG8gbjjlmgHDeoRzQSuioqi3YiX1otwPpxudGebGd8rdKTgn5NDvU18ZLB/Tdp/Hg/5q9pb/Rbfwz91ZVemSckUAouviJo1gWEODzcBchfc1tYpFC36xxMMbwP3SRz5ev2Ucl4Yk+IeaK7XK5bzR5OeZ60vRJGLyFp38UKTkdseme/2UrHc2uiqpc+Q9w5o2q8Rv8ADW0bwW7Nulm2nagAPfuTnpT/AMKcE6X4MN/MZbiROSrJjapUkZx9lSOB0kHCkQiPPMg8vIdTW/DRuBosezcfO/T/ABGmdEl5K5aGEWkCW8jqQhZSzsD3rhpCWp0eFo5t2VORn3rjHZ3MlpJuDc0Oa14f024OiwAR4Gz159a7oDT3vQRvLWN7MBOZLL+971KlshGF37R/6qg6naNDp+SeYZeW73FIXGf0gXGm6i1jo0SOYPLJNNlvN6KM0DCU7bWh/QxRarlVB/V/OlrjzXIzb/o2Py7vNMynBGOgz+NLnCnHWsXOpsNRhhnj8JiGjTbtIHLP24++o9nCda4gVbuQCFWMtxIegA5ml3TepQ/Dh4t1XgeeCNFfTdEkvbjz3V0o2lh5kXsPfNZ8RHDcm0kYCcD6tdpuKLf4aAQLuJYYVQTgfZQWS6lvNfW6jtpVXYRuMZrMbuNrRzpU0E2u42maFJAZR+53rjNbXjx+IsEhTHXFCNOVk1+e8uw8aEHw2YYB50022vxfotg+UxnGe9N529dAVahtMWpkukYFoJMH1WnXRrmO38udrPEK5XDePpRaKSLcY+5oVcodNAvNQm2wxQhsqep9PvxWqkvIu6q2tEjjSeSLQL2WOUhhGSKpCTiO6IUPFEWUg59aO8S/SHf30MlmqW6275RlEZZsfMn+QpVsvgLy+t1uz8NA0gEsgJIC9zRTSa7GcWhmk+kDUZh4ccMCHGNw7VYfBFxd6noFtcSSbpAzrJ78zVO8UaN+gNda3iLNbuFkgcnOVPv3qz/o3upYOELhwpZllcKB6mm204F1tsk8Z2Umniw1cIfDiYrKw7A1N0vXdFutAFv8XGMtgl+XzqudR4h1WyF7Y3MjzQzJmWCcZ257r6YrjZ6VrV9bBLeGIBRlYxyOD61H9lKnS7FrVNP/AFtzJaEyxRysrcueOxHsaGW8zwSI3RkYZDcqebGG6WV4b+2eGZcYR1xmg/FUFsW8RIgjKeZH7wpsv6MqOtoaeEL2yg0zUYBKu7wS0a55kH0+VO/AdzIOGIGjVgCzEEd+dUbpN2qfXUsOagA9AelXjwfbCLhvT1jmY5iB+ZoVHGmxXqMjcrQf+LuPST7x/SsrT4e5/iN/y1lFol9yhE0yxilWF7K6Z4iCu6Zxlj8u1Jd9oF7ou2e5QymQsqMpyueeP5UDsdevbNNsMrKD1APT5UYt+KtTu2ig8VViXkMjOPepox5cdb+j13kx2tDXw/xW+jaCbMvvkMhKvju2D/Wj/AWsaxfQmw021gaOMsz3EucLk5xy6nnQX6PBpg1822o26zm7jCxeKoYCRT2z6g1bkL2NkhiiNvbovVV2qPtqpcePgkuflsHrp/EbRmOTUbBEKYPh2zFvxaommcP6jLpUCya9cDy9EjUfkaJXHE+i2v7bVLVfYSg1poPEmlarH4VneRNKCR4W8biM9cV2pM7IL8MARNJdaldyiPz7WfAyOfaqG1qVDqVwfrbpGOfXnV88ScSWNnBeJ8Uu9YmUr79MfOvnm+bfNI2OYNDtNhqWkOHDrJDoNxdH60spQf4VUfmT91WD9G2gRyabLqF2PPO+FBHYc+/zpN4ftrccLaeo2F5UMrbhk7s8/s5Y+ynnhGYyxMiytgIGVA2VBB5n2+VDOPVcmMd7jihqOjWayRsrhSuSAAOdVt9KvFNxo8qaXos22Rl3TTgDcoPRV/HJp337tRO5G/Vxg53dc1T3EKjUdcvi/wCzEu5vbGfyWjqvoXMtCTcX17fSx/FXM0zKSULuTtPXl6VZH0d6y11cxaNrhDwzAi3mfqrD90nuDSBa24WO3uGHRwT9xP5U4ta4sZHiGyW2mLowHMbSf6VjycAli5rTLYuuEbR4GVbqSPy8tppC+ke7n4bjtrG3mNx46Bt83m6dh+FO9vrrXOixXiD9rbhvq9CRzpF+lbxtQ0rT5ni3ypIAhUYwCp/pR2+S2xcY1NdIqa4dmBdm3MzZNdNGGdUgSTJQsSQO/lNcZBW9k4S7jkOdqNzxWdJG97GziGJpOEdDuHR2aB2gMpHIIQCBn5nl7Ypx4BvNOThSa2nvFhneU8mOOZIx+FBo7OaT6Lrw3COEXM0JYeiLz+0g12+iWSKa2vbW4RXO4ONwz7flTZXKdC7eqJXGVrpT3GvIk0Ek3hQPbsDknsQDR/6P7q31C3+OXw4QlkkFwspxtaMnzfIg/hQ7UdJsrjjKWGRVVPgBLGi8gzgnApSuJok1KTaxiVcLMobAPPO33qRwUz8kHuNNajuNSZ4GWVVjWKFl5cueT99IusOrW8gYb3Ueb2zUq6u5Lm4eZQXcsQvovvWl7CEs4YlQ5kcZJ7nr+VNQXhaFzT0BWVS5D4wB8uefvq6vo6v5dR4dhFuyK1sfDZG549KpS2Ul5pum0Hl7nlin7hbWhod7vcMLe4s4ZmCA4D7QCf55+ddX9E7Sa7LX8a/9YqykX/WBZ+v869oOV/oTxxlM9KJ6NHvmBLYwaGdTR3TtMuZrBJLVHdpyyED93GOefto7aS7H402+ia+pRWUi5VzKSHjkBzs98fdUe6vJr69luXA/WHLALgE464qWvDOoMBLdNDCioFGTlsCrP4S+jzQ59OtLi8jmnmaMOwZ8KxPoBQzcb0hlp+WVLH4jtsiVnfbu2ouTj1xRTgYyz8WWbROyC1Dzsw64Cn8yKvW70qw0nRb4WFlb236h8+FGFJ5HvVIfR0SvEMo7NayAnv1HKtp6XYEdtBnipozoksaSb5jJ4g588hsnNV9PHIy+Nu8rOcrmrBvtDvL0XipaskhcGOSRsAjuOdC7TgjUBGVubm1QH6w5n8ql/kY58souW30d+Dw76HeQK8hFvdDZzwVDAcvv3U3aDPc2hLWk6mXbh43AyT2+z+VC9C0GfRLORXmSY3ci4aM4O1QRz9zkCt4fGtriSS22oc5XKgc6pi5ueSFa09Fj6W5vLNr6aMRO65ZAc4xVQ6oy29rqs4X9o4CnPrn+tPOjaj8S+6Gbb4Vs6TWx6DkTuHrSRrCZ0GIEcmIz9gFLyV8kHrpi54TNpsMCp5mCgc+/Ifzb8KcLVzLDqDEeQljn1GW/rS4+IXgYn9m0Zz8gx/KnPS7eO5s7mCNlz0HuAx/I0vK3oZhXYa4d3x8IQrsJAQge3PpU28sbfU7BLa7AeMhSVBwcjBFTLeJLTTJ4cgJuOM+pA/PNQr+7sbUQpL4gmYDCxrk/OqIpcFsRctU9FLcaaDJpOsTxQoTFuBXHPGaGaNZTXV/FD4TkMw5be1WRx9NayTRXNrcQycvCOHBZsc849Oo50s6DdNFrVs+SMPz59sUHNroYsSfZZur2KS8PXVkCwj+GKKvYDHIVUGnazecNhl051EkijxGdc5+VXukUd3YHYQQ8ZXr1qieJNA1DTd8l5EVRHKAjnyB5H7apiuia41Rw1TijUtUuo7m6kTxY02K0a7eXWpmpcbX+pWEdndQw+EiquUXBO33pWZSHx61tJFIi7seX1FZUy/J01X0NGnXiNbM8ceQD5gBkqa56jemW3jhlwB4mfEQ8uhxQHTL17O6BU+VzhhUjVnXxUMfPkSaFrsYq2iKmRG0eDjaHx6mrY+jzwLxPHW3Ci3tEt2yv7VidzN/8arHTzDHOzXZKosGcYyWOPq/bVu8CRLb6DC8cXhvLlpCwILHJxTMf5Ccj+Ie+Atv92j/5BWVv4zev41lV6Jj50srd7mQpEpZwMgDuas+GObTOGY7qCJNomMRDNgBiu6lvQZ7DSbjfb26zzsQFMpB28/T2o6/EkraZeH4C0KRSFjuHJ29cdPwrysq5npYnwHq80e2tuD7mdoYpJzBkz4zuJxzX0ovocQt+HbGS7mEcAgTDAYZftqtdL4u1K9h/Rc3gLZvEFZFUhl+R6fhTHcahqWpQDTIoCumx26xqchvGf15cxgDp75oOk+kG02iDxVxJrt0jpoRL2ufDlXKySKD03Z9fbOPWgPCt9bcLXGdX0iSA3BKi83bio9MenTpW+jRvaX9zCxGNmFC89p9PyoFxlqJk1S3sySyxR5Oeu5j/AEA++jULLPGheRcFyQ/3vEdjJctFbzAhcDcByPyNdY7qORMuokVu4PSqp0+ZSTCznHMqPeidlqF5bMBa3BUf7LcxXl5fQqHpMbjzbWyxbd7eNtsfibZDjrkA/lUTVVEERxydgdoz15UI07VLyWVFntGX1liUkfcKP3ipewiRCCOecdjVnonqXFP/AIBl/wBkLelXsmn2U88bkzTyMh5Z/V7Tn8f51H1aeV7Q2CLyMQdD8xz/ABFE7hPDgugUPhohUMMjdn1++oUDwyO1y5yIYsAdee3pTsq1R0vaARElxalz9VQB/f2E0c4YnlCW36znLH5snn12nH2ChPxMdvpVycAtLMIo1/wjmf5110+4+GZGYbfDj8o9fKT+dC/AUvsddMin1XT0i1N5POH8IhvMCOe8MOnUVWckzb2XxGYgkEls5qy9CvNqLC4/Zw705dSf7/vFVOGxcSr3EjD8adGtAZH2SHY8sfZW8UzxsGBG4HkehrkedZ8qJzsWqa8DTpHEmo2N34fxRjZvKqMPIG7E+3Qf0otPxC19p9zb6hppljnBVpEy/PuCOqn06ikLxWIweYHTNGNH1CVGUAtnP31q6N3y8kfVeEY10ptR0q68VY1LS28nJ1UdSO5x6YqDwtYSam4tLdkM2CdrDsBn7ae9RvEtNFubq68NMxOqlhyLFTgfeaR+Ell02aTWDBJLa20R3lX2g56DPz7UVztaZkvVdHjWsL2s9zNbrGkON4kwGyenLrS9dzB5D4a7FHIY6mpOsahNe3LyytlmYsTQ3oa6YUg3k5B3Q7gXMgt5rZpTuV2kiTdIFU9vWrwthDcxJKj+Rh5cqQce4PSqF4cuWttXgdSRnykj3q3LHWEtLdnnUygKSu0jmPmTy+2nQ0gHLpDD8On8SvaQv9ZY/wCEv/7hK8o/cQPtMA319DIU8GFmZc75MYLHtXiyF4nilVlR1OeY7+1aGMKcjGfnWpZiefOvHT14PXcpvskWVlJHJvguEYkAHd5TTNCq3FobbVIWaJh9ZTnHoQR0NLUEzKRkGitnegeUswFY7oOIxkIadd6VqDMkglth5lOfrLyz9vXl91KeoXDz6nc3EhDu0h+qeQ7DHtgCrPjvzPZm0kZJIiCAHQE8/fFL1zwbYzHdbTPAcYKK25QfbPP7KbizyvyJ8/pbpfAU7aYJPG5XkDzosZ2hk3QsB9gqTecKR2FjJMtxLLcqMx4GFB9/Wg0F2bpCZOUg+sKLK1k+Uk046w9UN+h8S3VuSrTP5iM7VQY/7adrCdNVsJvBb9ahD5JBJ/sVT8DlHycqM9R2p+4bh1NrJ5IYJUiYDDs2zdj0z86lmZx5VbDptzom6m1jbWci3szncCDHuwST7D+dK1sTHaoGznxGz78uVMWsQAAukSNID1lbcV+Q/sUv3zM0DsylGOQobrjHX8KqrJGT8QI2gRcNHHBD+8EXePck4NM+sW8PxSLAg2xo5IHceUCl60jSa4SA42xHoe4HT8TRa7nNlMkgbISNfMT+6P8AP+VC/KQ2X02SbzVXhsEghdTPt8NWwCQOufbFKNxpk0GZYSZE7j97/OiiyG5uWuJVy79MV0kuoYSTLKoPZe9LrM5r4i3pi+soI9COua6hganTi2vDlo9rfuuOR/zqDPbyWxLZDx5+sOo+YqiMyrpi9M2xU/R2zeRrjq1D1cGmDguzN5qw8pKoMkgdPenHI04o1izv9VXTpI8wWg5KWwHk7k/Ich9teXN1qGuWY0y0t3e3IA2QqFVT79vvrlrXBMzXNxJYvJcMG3M3ck+v+VF/o3sbnT0u/HlQeKwBhfrgd8ULap72GtrpoB2HBaWkm7iH4iIA+WNIWIb5uM4pQdFwxUYGTtHtV6azrFlpcK7zN4snIQ5ypHrnsKpWe0kN4tsg+u52nHLGev2Uc0vGxdRWt6OmmYtrSWdh5pPKh9AOZP34pksxE2nwTXczJFKvJUUFifXnyxXW00K1vdLgmPNVc5jHLeoHLJ9O9D9Su1mkKW+BCg2qR3x6e1Cw0tdEnwNI/wB6k/6A/wDtWUF+wVlYcG55VPQAVEeQHoKxnri7f3io0i90dVlI68q6x3BHc1BZq1MmKLQPIP2t26yA5HTnUw6ukKknHypSadj0rUyMetZwN97QevNbe5jMfSPOTS9JBImqIYELC4OFA7k9vvrDJtps4HtY5N1/MobaSsOex7n8vvreSxS2Iyvn5GDh3hiz02NLi+jW4vMZw3NI/YDufc0euLxXOHJAHoKgyXOOXftXA3MQyHZ0Pu38q8rJkq2YjrqDxSxDDb+xDHqKVOItPkhhNwucx5YKW5Hl0NMTlf2zs4AHI4yMUr63cS3SSRRbvhcblJB5n1xTPSulX9GUBt0gZWRSCyKp7Y/vFEtTAuXWCN2GxFBKf3361GSwmltFCnBxkn39KmQRPESZB5sAZq68i8oDfWjjBZeGu0zPjHZRnNdYrKEAtvJfsW5A/hW8jZY1osm1ugI96Q6ozSJ0Ec0KLIbZLiMN7N/KiVna6Tqe+BofCdxhkJwV+VDdPnHxG4B0CqfNH1z+dS7m5yUmZ4pZV5iRBtcfMUv5bC6FbXNIudCvvhZf1kL84ZAPrr/Ud6euBrNbLSfi5BukuCSAvmCgHHMevKhV3qiXrIbuFZjGcrnkQfamS02w6fEqMqEL2bIHevRx5XePvyZMrkErUht7NCmc9zg0N1C2sYyZEiCTZ7VrNNIY1K3COoHmAI5GoGq3RhiBLZAA5nvXVelopjGqe2QbucBuYBA9aXtSVBeRXsMSMVJ3x5wpyMZ9q632oAn0oTLdlsjPL0oZT8h25a0S7vVbuOzlTC7ZfKPD6InoKDeOWOQjhceXlXbxcgjop6itI5Gi8oOY+w9KcrZPUI18QfwpPvrK6eOPSsrubB9tfslsT61zasrKQilnJq5Oa9rKMWzztWpNZWVwLOMrEVY/DiiLS7REHlEQOPnzr2sqf1n+NAE5XPilO1eygHAIBA83217WV5i8mnBgYQHiZkz1UHl91R2xcRHeAvrt71lZRyYQ1AVcADFR5qysp68mMisa5E86yspgJ7b82ft8qyVihXBzn1r2sokcczIwIweZPWpbSyGBJRIwbocHkaysp2PyajpbZl8zMQfUHFTdend7aVGwQQe1ZWVuT8kWYvxYjSSNuxntXPcTXlZTyc2ycVgNZWVwR5WVlZWGH//Z"
-                            alt="Stress Management">
-                        <p>Stress Management Workshops</p>
-                    </div>
-                </div>
-                <button class="cta">Our Services</button>
-            </section>
-            <section class="wellness-programs">
-                <h2>Wellness Programs</h2>
-                <p>Explanation of personalized wellness plans and their benefits for employees and organizations.</p>
-                <button class="cta">Explore Programs</button>
-            </section>
-            <section class="testimonials">
-                <h2>Testimonials</h2>
-                <blockquote>
-                    <p>"HiveCare has transformed our workplace!" - Satisfied Client</p>
-                </blockquote>
-                <blockquote>
-                    <p>"Our employees are healthier and more productive thanks to HiveCare." - Happy Client</p>
-                </blockquote>
-            </section>
-            <section class="contact">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone Number">
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="contact-info">
-                    <p>Office Address: 123 Wellness St, Accra, Ghana</p>
-                    <p>Phone: +233 123 456 789</p>
-                    <p>Email: info@hivecare.com</p>
-                </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Sitemap</a>
+        <footer class="bg-[#DDEADE] p-24">
+            <div class="grid grid-cols-3">
+                <div>
+                    <img class="w-40 mb-6" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    <div class="flex gap-6 ml-2">
+                        <a href="#"><img class="w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                        <a href="#"><img class="w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                        <a href="#"><img class="w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                        <a href="#"><img class="w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="flex gap-10">
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Quick Links</h2>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="#">Programs</a>
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Services</h2>
+                        <a href="#">Nutritional Consultation</a>
+                        <a href="#">Fitness Class</a>
+                        <a href="#">Stress Management</a>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-2xl mb-4">Subscribe To Newsletter</h2>
+                    <input class="rounded-md mb-4" type="email" placeholder="johndoe@email.com">
+                    <div class="mx-auto my-0">
+                        <button class="button font-semibold text-black p-4 bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
+                    </div>
+                </div>
             </div>
-            <div class="social-media">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            </div>
-            <div class="newsletter">
-                <input type="email" placeholder="Subscribe to our newsletter">
-                <button type="submit">Subscribe</button>
+            <hr class="m-4 p-0.5 bg-[white]">
+            <div class="flex justify-between">
+                <div>HiveCare | Copyright &copy; 2024</div>
+                <div>Terms of Use | Privacy Policy</div>
             </div>
         </footer>
     </body>
