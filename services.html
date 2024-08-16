@@ -12,10 +12,10 @@
         <div class="bg-[url('public/images/office-worker-header.jpg')] w-full bg-cover">
             <div class="shadow-inner backdrop-brightness-50">
                 <header class="absolute inset-x-0 top-0 z-50">
-                    <nav class="flex items-center justify-end p-6 lg:px-8" aria-label="Global">
+                    <nav class="flex items-center justify-end p-6 lg:px-24" aria-label="Global">
                         <div class="flex lg:flex-1">
                             <a href="index.html" class="-m-1.5 p-1.5">
-                                <img class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                <img loading="lazy" class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
                             </a>
                         </div>
                         <div class="flex lg:hidden">
@@ -39,14 +39,12 @@
                             <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </nav>
-                    <!-- Mobile menu, show/hide based on menu open state. -->
                     <div class="lg:hidden" role="dialog" aria-modal="true">
-                        <!-- Background backdrop, show/hide based on slide-over state. -->
                         <div class="fixed inset-0 z-50"></div>
                         <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                             <div class="flex items-center justify-between">
                                 <a href="#" class="-m-1.5 p-1.5">
-                                    <img class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                    <img loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
                                 </a>
                                 <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -72,46 +70,78 @@
                         </div>
                     </div>
                 </header>
-                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                <div class="relative isolate px-6 pt-14 lg:px-24">
+                    <div class="max-w-2xl py-32 sm:py-48 lg:py-24 lg:px-5 mx-auto my-0">
+                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                            <div class="mx-auto my-0">
+                                <h1 class="text-5xl mb-10 text-white text-center">Services</h1>
+                                <hr class="w-3/5 mt-4 mb-4 mx-auto my-0">
+                                <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">HiveCare is dedicated to empowering desk-bound employees to live healthier and more productive lives through accessible, personalised, and engaging workplace wellness solutions. Our mission is to create a healthier workforce in Accra, Ghana, where every employee is motivated and equipped to lead a healthier and more productive life.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <main>
-                    <section class="services-page">
-                        <h1>Our Services</h1>
-                        <div class="service-detail">
-                            <h2>Health Screenings</h2>
-                            <p>Our health screenings include comprehensive checks for key health indicators to ensure employees are aware of their health status and can take proactive steps to improve their well-being.</p>
-                        </div>
-                        <div class="service-detail">
-                            <h2>Nutrition Counseling</h2>
-                            <p>Our nutrition counseling services provide personalized dietary advice to help employees make healthier food choices, improve their energy levels, and achieve their wellness goals.</p>
-                        </div>
-                        <div class="service-detail">
-                            <h2>Fitness Classes</h2>
-                            <p>We offer a variety of fitness classes designed to accommodate different fitness levels and preferences, helping employees stay active and healthy.</p>
-                        </div>
-                        <div class="service-detail">
-                            <h2>Stress Management Workshops</h2>
-                            <p>Our stress management workshops teach employees effective techniques for managing stress, improving mental health, and enhancing productivity.</p>
-                        </div>
-                    </section>
-                </main>
-                <footer>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Sitemap</a>
+            </div>
+        </div>
+        <main>
+            <section class="services-page">
+                <h1>Our Services</h1>
+                <div class="service-detail">
+                    <h2>Health Screenings</h2>
+                    <p>Our health screenings include comprehensive checks for key health indicators to ensure employees are aware of their health status and can take proactive steps to improve their well-being.</p>
+                </div>
+                <div class="service-detail">
+                    <h2>Nutrition Counseling</h2>
+                    <p>Our nutrition counseling services provide personalized dietary advice to help employees make healthier food choices, improve their energy levels, and achieve their wellness goals.</p>
+                </div>
+                <div class="service-detail">
+                    <h2>Fitness Classes</h2>
+                    <p>We offer a variety of fitness classes designed to accommodate different fitness levels and preferences, helping employees stay active and healthy.</p>
+                </div>
+                <div class="service-detail">
+                    <h2>Stress Management Workshops</h2>
+                    <p>Our stress management workshops teach employees effective techniques for managing stress, improving mental health, and enhancing productivity.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-[#DDEADE] p-24">
+            <div class="grid grid-cols-3">
+                <div>
+                    <img class="w-40 mb-6" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    <div class="flex gap-6 ml-2">
+                        <a href="#"><img class="w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                        <a href="#"><img class="w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                        <a href="#"><img class="w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                        <a href="#"><img class="w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
                     </div>
-                    <div class="social-media">
-                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="twitter.png" alt="Twitter"></a>
-                        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="flex gap-10">
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Quick Links</h2>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="#">Programs</a>
                     </div>
-                    <div class="newsletter">
-                        <input type="email" placeholder="Subscribe to our newsletter">
-                        <button type="submit">Subscribe</button>
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Services</h2>
+                        <a href="#">Nutritional Consultation</a>
+                        <a href="#">Fitness Class</a>
+                        <a href="#">Stress Management</a>
                     </div>
-                </footer>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-2xl mb-4">Subscribe To Newsletter</h2>
+                    <input class="rounded-md mb-4" type="email" placeholder="johndoe@email.com">
+                    <div>
+                        <button class="button font-semibold text-black p-4 bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="m-4 p-0.5 bg-[white]">
+            <div class="flex justify-between">
+                <div>HiveCare | Copyright &copy; 2024</div>
+                <div>Terms of Use | Privacy Policy</div>
+            </div>
+        </footer>
     </body>
 </html>

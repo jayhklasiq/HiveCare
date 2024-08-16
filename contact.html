@@ -4,23 +4,84 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us - HiveCare</title>
-        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">HiveCare</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="wellness.html">Wellness Programs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="bloglist.html">Blogs</a></li>
-                </ul>
-            </nav>
-            <button class="cta">Get Started</button>
-        </header>
+        <div class="bg-[url('public/images/office-worker-header.jpg')] w-full bg-cover">
+            <div class="shadow-inner backdrop-brightness-50">
+                <header class="absolute inset-x-0 top-0 z-50">
+                    <nav class="flex items-center justify-end p-6 lg:px-24" aria-label="Global">
+                        <div class="flex lg:flex-1">
+                            <a href="index.html" class="-m-1.5 p-1.5">
+                                <img loading="lazy" class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hidden lg:flex lg:gap-x-4">
+                            <a href="index.html" class="text-sm font-semibold leading-6 text-white">Home</a>
+                            <a href="about.html" class="text-sm font-semibold leading-6 text-white">About Us</a>
+                            <a href="services.html" class="text-sm font-semibold leading-6 text-white">Services</a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Wellness Programs</a>
+                            <a href="contact.html" class="text-sm font-semibold leading-6 text-white">Contact Us</a>
+                            <a href="bloglist.html" class="text-sm font-semibold leading-6 text-white">Blogs</a>
+                            <span class="text-white"> | </span>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Call Us<span aria-hidden="true"></span></a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Message <span aria-hidden="true"></span></a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </nav>
+                    <div class="lg:hidden" role="dialog" aria-modal="true">
+                        <div class="fixed inset-0 z-50"></div>
+                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="-m-1.5 p-1.5">
+                                    <img loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                </a>
+                                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-gray-500/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Wellness Programs</a>
+                                    </div>
+                                    <div class="py-6">
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Call Us</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Message</a>
+                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="relative isolate px-6 pt-14 lg:px-24">
+                    <div class="max-w-2xl py-32 sm:py-48 lg:py-24 lg:px-5 mx-auto my-0">
+                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                            <div class="mx-auto my-0">
+                                <h1 class="text-5xl mb-10 text-white text-center">We Want To Hear From You</h1>
+                                <hr class="w-3/5 mt-4 mb-4 mx-auto my-0">
+                                <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">HiveCare is dedicated to empowering desk-bound employees to live healthier and more productive lives through accessible, personalised, and engaging workplace wellness solutions. Our mission is to create a healthier workforce in Accra, Ghana, where every employee is motivated and equipped to lead a healthier and more productive life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <main>
             <section class="contact-page">
                 <h1>Contact Us</h1>
@@ -41,21 +102,43 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Sitemap</a>
+        <footer class="bg-[#DDEADE] p-24">
+            <div class="grid grid-cols-3">
+                <div>
+                    <img class="w-40 mb-6" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    <div class="flex gap-6 ml-2">
+                        <a href="#"><img class="w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                        <a href="#"><img class="w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                        <a href="#"><img class="w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                        <a href="#"><img class="w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="flex gap-10">
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Quick Links</h2>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="#">Programs</a>
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl mb-4">Services</h2>
+                        <a href="#">Nutritional Consultation</a>
+                        <a href="#">Fitness Class</a>
+                        <a href="#">Stress Management</a>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-2xl mb-4">Subscribe To Newsletter</h2>
+                    <input class="rounded-md mb-4" type="email" placeholder="johndoe@email.com">
+                    <div>
+                        <button class="button font-semibold text-black p-4 bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
+                    </div>
+                </div>
             </div>
-            <div class="social-media">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            </div>
-            <div class="newsletter">
-                <input type="email" placeholder="Subscribe to our newsletter">
-                <button type="submit">Subscribe</button>
+            <hr class="m-4 p-0.5 bg-[white]">
+            <div class="flex justify-between">
+                <div>HiveCare | Copyright &copy; 2024</div>
+                <div>Terms of Use | Privacy Policy</div>
             </div>
         </footer>
     </body>
