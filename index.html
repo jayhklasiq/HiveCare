@@ -6,23 +6,22 @@
         <title>Home - HiveCare</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <script src="app.js" defer></script>
     </head>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <body>
         <div class="bg-[url('public/images/office-worker-header.webp')] w-full bg-cover">
             <div class="shadow-inner backdrop-brightness-50">
                 <header class="absolute inset-x-0 top-0 z-50">
-                    <nav class="flex items-center justify-end p-6 lg:px-24" aria-label="Global">
-                        <div class="flex lg:flex-1">
+                    <nav id="nav" class="flex items-center justify-between p-6 lg:px-24" aria-label="Global">
+                        <div class="lg:flex lg:flex-1">
                             <a href="index.html" class="-m-1.5 p-1.5">
                                 <img loading="lazy" loading="lazy" class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
                             </a>
                         </div>
                         <div class="flex lg:hidden">
-                            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                                <span class="sr-only">Open main menu</span>
+                            <button type="button" id="open-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke="white" />
                                 </svg>
                             </button>
                         </div>
@@ -39,38 +38,24 @@
                             <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </nav>
-                    <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <div class="hidden" id="mobile" role="dialog" aria-modal="true">
                         <div class="fixed inset-0 z-50"></div>
-                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(0,0,0,0.8)] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                             <div class="flex items-center justify-between">
                                 <a href="#" class="-m-1.5 p-1.5">
                                     <img loading="lazy" loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
                                 </a>
-                                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" stroke="white" />
                                     </svg>
                                 </button>
-                            </div>
-                            <div class="mt-6 flow-root">
-                                <div class="-my-6 divide-y divide-gray-500/10">
-                                    <div class="space-y-2 py-6">
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Wellness Programs</a>
-                                    </div>
-                                    <div class="py-6">
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Call Us</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Message</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in </a>
-                                    </div>
-                                </div>
+                                <!-- THIS IS THE SECTION FOR MOBILE VIEW MENU -->
                             </div>
                         </div>
                     </div>
                 </header>
-                <div class="relative isolate pb-[250px] px-6 pt-14 lg:px-24">
+                <div class="md:relative isolate pb-[250px] px-6 pt-14 lg:px-24 text-center">
                     <div class="lg:pb-0 lg:py-1 sm:py-48 grid grid-cols-3">
                         <div class="max-w-2xl col-span-2 lg:py-32 hidden sm:mb-8 sm:flex sm:justify-center flex-col">
                             <div class="relative py-1 text-sm leading-6 text-white">THE HIVECARE SOLUTION</div>
@@ -81,11 +66,11 @@
                                 <a href="services.html" class="hover:bg-[#b3f289] font-semibold text-black p-4 bg-[#D8FF9A] rounded-full">LEARN MORE</a>
                             </div>
                         </div>
-                        <div class="absolute right-[80px] top-[60%] transform -translate-y-1/2 bg-white rounded-[20px] overflow-hidden shadow-md w-[300px] text-center z-20">
+                        <div class="hidden absolute right-[80px] top-[60%] transform -translate-y-1/2 bg-white rounded-[20px] overflow-hidden shadow-md w-[300px] text-center z-20">
                             <div>
                                 <img loading="lazy" loading="lazy" class="rounded-t-lg object-cover" src="public/images/s-ervices.webp" alt="lady customer care">
                             </div>
-                            <div id="services-header" class="text-sm rounded-b-lg bg-white px-3 pb-3">
+                            <div id="services-header" class="text-sm rounded-b-lg px-3 pb-3">
                                 <div class="flex justify-between mb-3 mx flex-nowrap">
                                     <h2 class="font-bold text-lg">Core Services</h2>
                                     <img loading="lazy" class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
