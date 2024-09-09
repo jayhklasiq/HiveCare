@@ -4,37 +4,73 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wellness Programs - HiveCare</title>
-        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <script src="app.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="logo">HiveCare</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="wellness.html">Wellness Programs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="bloglist.html">Blogs</a></li>
-                </ul>
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav id="nav" class="flex items-center justify-between px-2 lg:px-24" aria-label="Global">
+                <div class="lg:flex lg:flex-1">
+                    <a href="index.html" class="-m-1.5 p-1.5">
+                        <img loading="lazy" loading="lazy" class="h-12 sm:h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" id="open-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke="white" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-4">
+                    <a href="index.html" class="text-sm font-semibold leading-6 text-white">Home</a>
+                    <a href="about.html" class="text-sm font-semibold leading-6 text-white">About Us</a>
+                    <a href="services.html" class="text-sm font-semibold leading-6 text-white">Services</a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-white">Wellness Programs</a>
+                    <a href="contact.html" class="text-sm font-semibold leading-6 text-white">Contact Us</a>
+                    <a href="bloglist.html" class="text-sm font-semibold leading-6 text-white">Blogs</a>
+                    <span class="text-white"> | </span>
+                    <a href="#" class="text-sm font-semibold leading-6 text-white">Call Us<span aria-hidden="true"></span></a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-white">Message <span aria-hidden="true"></span></a>
+                    <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+                </div>
             </nav>
-            <button class="cta">Get Started</button>
+            <div class="hidden" id="mobile" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-50"></div>
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(0,0,0,0.8)] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <img loading="lazy" loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                        </a>
+                        <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" stroke="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- THIS IS THE SECTION FOR MOBILE VIEW MENU -->
+                    <div class="flex flex-col mt-4">
+                        <a href="index.html" class="text-sm m-3 font-semibold leading-6 text-white">Home</a>
+                        <a href="about.html" class="text-sm m-3 font-semibold leading-6 text-white">About Us</a>
+                        <a href="services.html" class="text-sm m-3 font-semibold leading-6 text-white">Services</a>
+                        <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Wellness Programs</a>
+                        <a href="contact.html" class="text-sm m-3 font-semibold leading-6 text-white">Contact Us</a>
+                        <a href="bloglist.html" class="text-sm m-3 font-semibold leading-6 text-white">Blogs</a>
+                        <hr class="text-white">
+                        <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Call Us<span aria-hidden="true"></span></a>
+                        <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Message <span aria-hidden="true"></span></a>
+                        <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
             <section class="wellness-programs-page">
                 <h1>Wellness Programs</h1>
-                <p>HiveCare creates personalized wellness plans that cater to
-                    the unique needs of each organization and its employees. Our
-                    programs are designed to support employees in achieving
-                    their health and wellness goals through a combination of
-                    health screenings, nutrition counseling, fitness classes,
-                    and stress management workshops.</p>
+                <p>HiveCare creates personalized wellness plans that cater to the unique needs of each organization and its employees. Our programs are designed to support employees in achieving their health and wellness goals through a combination of health screenings, nutrition counseling, fitness classes, and stress management workshops.</p>
                 <h2>How We Develop Personalized Wellness Plans</h2>
-                <p>We work closely with each organization to understand their
-                    specific needs and challenges. Our health coaches provide
-                    ongoing support to ensure employees stay on track with their
-                    wellness plans.</p>
+                <p>We work closely with each organization to understand their specific needs and challenges. Our health coaches provide ongoing support to ensure employees stay on track with their wellness plans.</p>
                 <h2>Benefits for Employees and Organizations</h2>
                 <ul>
                     <li>Improved employee health and well-being</li>
@@ -43,13 +79,9 @@
                     <li>Enhanced company culture and employee satisfaction</li>
                 </ul>
                 <h2>Success Metrics</h2>
-                <p>We track key performance indicators (KPIs) to measure the
-                    success of our wellness programs, including employee
-                    participation rates, health outcomes, and overall
-                    satisfaction.</p>
+                <p>We track key performance indicators (KPIs) to measure the success of our wellness programs, including employee participation rates, health outcomes, and overall satisfaction.</p>
                 <h2>Impact Stories</h2>
-                <p>Read case studies and testimonials from organizations that
-                    have benefited from our wellness programs.</p>
+                <p>Read case studies and testimonials from organizations that have benefited from our wellness programs.</p>
             </section>
         </main>
         <footer>

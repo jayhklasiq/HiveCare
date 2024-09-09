@@ -6,22 +6,22 @@
         <title>About Us - HiveCare</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <script src="app.js" defer></script>
     </head>
     <body>
         <div class="bg-[url('public/images/header-image-3.webp')] w-full bg-cover">
             <div class="shadow-inner backdrop-brightness-50">
                 <header class="absolute inset-x-0 top-0 z-50">
-                    <nav class="flex items-center justify-end p-6 lg:px-24" aria-label="Global">
-                        <div class="flex lg:flex-1">
+                    <nav id="nav" class="flex items-center justify-between px-2 lg:px-24" aria-label="Global">
+                        <div class="lg:flex lg:flex-1">
                             <a href="index.html" class="-m-1.5 p-1.5">
-                                <img loading="lazy" class="h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                <img loading="lazy" loading="lazy" class="h-12 sm:h-20 w-auto" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
                             </a>
                         </div>
                         <div class="flex lg:hidden">
-                            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                                <span class="sr-only">Open main menu</span>
+                            <button type="button" id="open-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke="white" />
                                 </svg>
                             </button>
                         </div>
@@ -38,43 +38,41 @@
                             <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </nav>
-                    <div class="lg:hidden" role="dialog" aria-modal="true">
+                    <div class="hidden" id="mobile" role="dialog" aria-modal="true">
                         <div class="fixed inset-0 z-50"></div>
-                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(0,0,0,0.8)] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                             <div class="flex items-center justify-between">
                                 <a href="#" class="-m-1.5 p-1.5">
-                                    <img loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
+                                    <img loading="lazy" loading="lazy" class="h-8 w-auto" src="public/images/hivecare - Copy.PNG" alt="">
                                 </a>
-                                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" stroke="white" />
                                     </svg>
                                 </button>
                             </div>
-                            <div class="mt-6 flow-root">
-                                <div class="-my-6 divide-y divide-gray-500/10">
-                                    <div class="space-y-2 py-6">
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About Us</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Wellness Programs</a>
-                                    </div>
-                                    <div class="py-6">
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Call Us</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Message</a>
-                                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in </a>
-                                    </div>
-                                </div>
+                            <!-- THIS IS THE SECTION FOR MOBILE VIEW MENU -->
+                            <div class="flex flex-col mt-4">
+                                <a href="index.html" class="text-sm m-3 font-semibold leading-6 text-white">Home</a>
+                                <a href="about.html" class="text-sm m-3 font-semibold leading-6 text-white">About Us</a>
+                                <a href="services.html" class="text-sm m-3 font-semibold leading-6 text-white">Services</a>
+                                <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Wellness Programs</a>
+                                <a href="contact.html" class="text-sm m-3 font-semibold leading-6 text-white">Contact Us</a>
+                                <a href="bloglist.html" class="text-sm m-3 font-semibold leading-6 text-white">Blogs</a>
+                                <hr class="text-white">
+                                <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Call Us<span aria-hidden="true"></span></a>
+                                <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Message <span aria-hidden="true"></span></a>
+                                <a href="#" class="text-sm m-3 font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
                             </div>
                         </div>
                     </div>
                 </header>
                 <div class="relative isolate px-6 pt-14 lg:px-24">
                     <div class="max-w-2xl py-32 sm:py-48 lg:py-24 lg:px-5 mx-auto my-0">
-                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                        <div class="sm:mb-8 sm:flex sm:justify-center flex-col">
                             <div class="mx-auto my-0">
                                 <h1 class="text-5xl mb-10 text-white text-center">About Us</h1>
-                                <hr class="w-3/5 mt-4 mb-4 mx-auto my-0">
+                                <hr class="w-3/5 sm:mt-4 sm:mb-4 my-0 mx-auto mt-5">
                                 <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">HiveCare is dedicated to empowering desk-bound employees to live healthier and more productive lives through accessible, personalised, and engaging workplace wellness solutions. Our mission is to create a healthier workforce in Accra, Ghana, where every employee is motivated and equipped to lead a healthier and more productive life.</p>
                             </div>
                         </div>
@@ -83,120 +81,118 @@
             </div>
         </div>
         <main>
-            <section class="grid grid-rows-[1fr_auto] auto-rows-auto p-24 gap-5 bg-[#DDEADE]">
-                <div class="grid grid-cols-2 gap-40">
+            <section class="flex flex-col p-12 md:grid md:grid-rows-[1fr_auto] md:auto-rows-auto sm:p-24 sm:gap-5 bg-[#DDEADE]">
+                <div class="flex flex-col-reverse gap-20 md:grid md:grid-cols-2 md:gap-40">
                     <div class="relative">
                         <img loading="lazy" class="rounded-md" src="public/images/healthcanre.webp" alt="health systems">
                     </div>
-                    <div class="content-center">
-                        <div class="flex gap-4 mb-8 flex-nowrap">
-                            <img loading="lazy" class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
-                            <h2>HOW IT WORKS</h2>
+                    <div class="content-center text-center md:text-left">
+                        <div class="flex flex-col gap-4 mb-8 text-center md:text-left md:flex-row sm:flex-nowrap">
+                            <img loading="lazy" class="w-6 my-0 mx-auto md:ml-0" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                            <h2 class="flex-grow">HOW IT WORKS</h2>
                         </div>
                         <h1 class="text-5xl mb-6">Understanding Our Approach</h1>
                         <p>At HiveCare, we believe in a holistic and personalised approach to workplace wellness. Our process is designed to be collaborative, engaging, and results-driven, ensuring that every employee and organisation receives the support they need to thrive.</p>
                     </div>
                 </div>
-                <div class="flex gap-20 justify-around mt-10 h-[40%]">
-                    <div class="flex flex-col items-center text-center">
+                <div class="flex flex-col justify-around md:flex-row sm:gap-7 mt-10 h-[40%]">
+                    <div class="flex flex-col items-center text-center gap-2 mb-4 md:mb-0 md:gap-0">
                         <img loading="lazy" class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
                         <p>STEP 1</p>
                         <p>Assessment</p>
                     </div>
-                    <img loading="lazy" class="w-10 h-10" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="">
-                    <div class="flex flex-col items-center text-center">
+                    <img loading="lazy" class="w-10 h-10 hidden sm:block" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="right arrow">
+                    <div class="flex flex-col items-center text-center gap-2 mb-6 sm:mb-0 md:gap-0">
                         <img loading="lazy" class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
                         <p>STEP 2</p>
                         <p>Customization</p>
                     </div>
-                    <img loading="lazy" class="w-10 h-10" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="">
-                    <div class="flex flex-col items-center text-center">
+                    <img loading="lazy" class="w-10 h-10 hidden sm:block" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="right arrow">
+                    <div class="flex flex-col items-center text-center gap-2 mb-6 sm:mb-0 md:gap-0">
                         <img loading="lazy" class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
                         <p>STEP 3</p>
                         <p>Implementation</p>
                     </div>
-                    <img loading="lazy" class="w-10 h-10" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="">
-                    <div class="flex flex-col items-center text-center">
+                    <img loading="lazy" class="w-10 h-10 hidden sm:block" src="public/images/arrow-sm-right-svgrepo-com.svg" alt="right arrow">
+                    <div class="flex flex-col items-center text-center gap-2 mb-6 sm:mb-0 md:gap-0">
                         <img loading="lazy" class="h-10" src="public/images/asterisk-circle-fill-svgrepo-com.svg" alt="green asterisk-circle">
                         <p>STEP 4</p>
                         <p>Evaluation</p>
                     </div>
                 </div>
             </section>
-            <section class="grid grid-cols-3 p-24 gap-5">
-                <div class=" flex col-span-2 flex-col">
-                    <div class="flex gap-4 mb-8 flex-nowrap">
-                        <img loading="lazy" class="w-6" loading="lazy" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
-                        <h2>OUR TEAM</h2>
+            <section class="grid grid-cols-1 sm:grid-cols-3 p-8 sm:p-24 gap-5">
+                <div class="flex flex-col col-span-1 sm:col-span-2">
+                    <div class="flex flex-col gap-4 mb-8 text-center sm:text-left sm:flex-row sm:flex-nowrap">
+                        <img loading="lazy" class="w-6 my-0 mx-auto sm:mx-0" src="public/images/hexagon-geometrical-shape-outline-svgrepo-com.svg" alt="hexagon bullet point">
+                        <h2 class="flex-grow">OUR TEAM</h2>
                     </div>
-                    <p class="text-5xl mb-16 lg:pr-[200px]">Team of Compassionate ExpertS</p>
-                    <div class="flex gap-x-5 rounded-md">
-                        <div>
-                            <div class="rounded-md w-fit bg-zinc-900">
-                                <img loading="lazy" class="w-fit h-[256px] rounded-md" src="public/images/fortune.jpeg" alt="Fortune Eshun, CEO">
+                    <p class="text-3xl sm:text-5xl mb-8 sm:mb-16 sm:pr-[200px] text-center sm:text-left">Team of Compassionate Experts</p>
+                    <div class="flex flex-col sm:flex-row gap-y-5 gap-x-5 rounded-md items-center sm:items-stretch">
+                        <div class="w-fit">
+                            <div class="rounded-md bg-zinc-900">
+                                <img loading="lazy" class="w-full h-auto rounded-md" src="public/images/fortune.jpeg" alt="Fortune Eshun, CEO">
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between mt-4">
                                 <div>
-                                    <p class="font-semibold mb-1">Fortune Eshun</p>
-                                    <span class="text-[#6BA50F]">CEO & Founder</span>
+                                    <p class="font-semibold mb-1 text-center sm:text-left">Fortune Eshun</p>
+                                    <span class="text-[#6BA50F] block text-center sm:text-left">CEO & Founder</span>
                                 </div>
-                                <img  loading="lazy" class="w-6" loading="lazy" src="public/images/background-x-hexagon-alt-1-svgrepo-com.svg" alt="hexagon bullet point">
+                                <img loading="lazy" class="w-6 hidden sm:block" src="public/images/background-x-hexagon-alt-1-svgrepo-com.svg" alt="hexagon bullet point">
                             </div>
                         </div>
-                        <div>
-                            <div class="rounded-md w-fit border border-gray-300 ">
-                                <img loading="lazy" class="w-fit h-[256px] rounded-md" src="public/images/Joshua_Olaoye-removebg-preview.png" alt="Fortune Eshun, CEO">
+                        <div class="w-fit">
+                            <div class="rounded-md border border-gray-300">
+                                <img loading="lazy" class="w-full h-auto rounded-md" src="public/images/Joshua_Olaoye-removebg-preview.png" alt="Joshua O. Olaoye, CTO">
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between mt-4">
                                 <div>
-                                    <p class="font-semibold mb-1">Joshua O. Olaoye</p>
-                                    <span class="text-[#6BA50F]">CTO & Co-Founder</span>
+                                    <p class="font-semibold mb-1 text-center sm:text-left">Joshua O. Olaoye</p>
+                                    <span class="text-[#6BA50F] block text-center sm:text-left">CTO & Co-Founder</span>
                                 </div>
-                                <img loading="lazy" class="w-6" loading="lazy" src="public/images/background-x-hexagon-alt-1-svgrepo-com.svg" alt="hexagon bullet point">
+                                <img loading="lazy" class="w-6 hidden sm:block" src="public/images/background-x-hexagon-alt-1-svgrepo-com.svg" alt="hexagon bullet point">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-end items-start">
+                <div class="flex justify-center sm:justify-end items-center sm:items-start mt-8 sm:mt-0">
                     <a class="p-4 text-[#B8FF48] bg-[#222222] rounded-full" href="">JOIN OUR TEAM</a>
                 </div>
             </section>
         </main>
-        <footer class="bg-[#DDEADE] p-24">
-            <div class="grid grid-cols-3">
-                <div>
-                    <img loading="lazy" class="w-40 mb-6" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
-                    <div class="flex gap-6 ml-2">
-                        <a href="#"><img loading="lazy" class="w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
-                        <a href="#"><img loading="lazy" class="w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
-                        <a href="https://www.linkedin.com/company/hivecare/"><img loading="lazy" class="w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
-                        <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img loading="lazy" class="w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
+        <footer class="bg-[#DDEADE] p-12 sm:p-24">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="text-center sm:text-left">
+                    <img loading="lazy" class="w-32 mb-4 sm:mb-6 mx-auto sm:mx-0" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    <div class="flex justify-center sm:justify-start gap-6 mt-4">
+                        <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                        <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/company/hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                        <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
                     </div>
                 </div>
-                <div class="flex gap-10">
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl mb-4">Quick Links</h2>
+                <div class="flex justify-center sm:justify-start gap-8">
+                    <div class="flex flex-col items-center sm:items-start">
+                        <h2 class="text-xl sm:text-2xl mb-4">Quick Links</h2>
                         <a href="index.html">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                     </div>
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl mb-4">Services</h2>
+                    <div class="flex flex-col items-center sm:items-start">
+                        <h2 class="text-xl sm:text-2xl mb-4">Services</h2>
                         <a href="#">Nutritional Consultation</a>
                         <a href="#">Fitness Class</a>
-                        <a href="">Stress Management</a>
+                        <a href="#">Stress Management</a>
                     </div>
                 </div>
-                <div class="flex flex-col">
-                    <h2 class="text-2xl mb-4">Subscribe To Newsletter</h2>
-                    <input class="rounded-md mb-4" type="email" placeholder="johndoe@email.com">
-                    <div>
-                        <button class="button font-semibold text-black p-4 bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
-                    </div>
+                <div class="text-center sm:text-left">
+                    <h2 class="text-xl sm:text-2xl mb-4">Subscribe To Newsletter</h2>
+                    <input class="rounded-md mb-4 w-full p-2" type="email" placeholder="johndoe@email.com">
+                    <button class="font-semibold text-black p-3 w-full sm:w-auto bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
                 </div>
             </div>
-            <hr class="m-4 p-0.5 bg-[white]">
-            <div class="flex justify-between">
+            <hr class="my-4 bg-white">
+            <div class="flex flex-col sm:flex-row justify-between text-center sm:text-left gap-2">
                 <div>HiveCare | Copyright &copy; 2024</div>
                 <div>Terms of Use | Privacy Policy</div>
             </div>
