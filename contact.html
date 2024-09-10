@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us - HiveCare</title>
+        <title>About Us - HiveCare</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
         <script src="app.js" defer></script>
     </head>
     <body>
-        <div class="bg-[url('public/images/office-worker-header.jpg')] w-full bg-cover">
+        <div class="bg-[url('public/images/header-image-3.webp')] w-full bg-cover">
             <div class="shadow-inner backdrop-brightness-50">
                 <header class="absolute inset-x-0 top-0 z-50">
                     <nav id="nav" class="flex items-center justify-between px-2 lg:px-24" aria-label="Global">
@@ -69,11 +69,11 @@
                 </header>
                 <div class="relative isolate px-6 pt-14 lg:px-24">
                     <div class="max-w-2xl py-32 sm:py-48 lg:py-24 lg:px-5 mx-auto my-0">
-                        <div class="hidden sm:mb-8 sm:flex sm:justify-center flex-col">
+                        <div class="sm:mb-8 sm:flex sm:justify-center flex-col">
                             <div class="mx-auto my-0">
-                                <h1 class="text-5xl mb-10 text-white text-center">We Want To Hear From You</h1>
-                                <hr class="w-3/5 mt-4 mb-4 mx-auto my-0">
-                                <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">HiveCare is dedicated to empowering desk-bound employees to live healthier and more productive lives through accessible, personalised, and engaging workplace wellness solutions. Our mission is to create a healthier workforce in Accra, Ghana, where every employee is motivated and equipped to lead a healthier and more productive life.</p>
+                                <h1 class="text-5xl mb-10 text-white text-center">Contact Us</h1>
+                                <hr class="w-3/5 sm:mt-4 sm:mb-4 my-0 mx-auto mt-5">
+                                <p class="mx-auto my-0 mt-2 mb-6 text-lg leading-8 text-white text-center">Get In Touch With Us Today</p>
                             </div>
                         </div>
                     </div>
@@ -81,61 +81,84 @@
             </div>
         </div>
         <main>
-            <section class="contact-page">
-                <h1>Contact Us</h1>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone Number">
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="contact-info">
-                    <p>Office Address: 123 Wellness St, Accra, Ghana</p>
-                    <p>Phone: +233 123 456 789</p>
-                    <p>Email: info@hivecare.com</p>
+            <section class="flex flex-col p-12 md:grid md:grid-rows-[1fr_auto] md:auto-rows-auto sm:p-24 sm:gap-5 bg-[#DDEADE]">
+                <div class="">
+                    <div class="content-center text-center md:text-left">
+                        <h1 class="text-5xl mb-6">Let's Help You Thrive</h1>
+                        <p>Reach out to us for more information on our wellness programs, to schedule a consultation, or to ask any questions you might have. Let’s work together to create a healthier and more productive workplace.</p>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-2 mt-5">
+                        <div class="flex p-3 gap-4 font-bold">
+                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <div>
+                                <p>Phone Number</p>
+                                <p>+233 20 865 6648</p>
+                            </div>
+                        </div>
+                        <div class="flex p-3 gap-4 font-bold">
+                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <div>
+                                <p>Business Hours</p>
+                                <p>Mon-Fri - 07:00-16:00</p>
+                            </div>
+                        </div>
+                        <div class="flex p-3 gap-4 font-bold">
+                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <div>
+                                <p>Address</p>
+                                <p>No Physical Address</p>
+                            </div>
+                        </div>
+                        <div class="flex p-3 gap-4 font-bold">
+                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <div>
+                                <p>Email</p>
+                                <a href="mailto:info.hivecare@gmail.com">info.hivecare@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="map">
-                    <!-- Embed Google Map here -->
                 </div>
             </section>
+            <section class="grid grid-cols-1 sm:grid-cols-3 p-8 sm:p-24 gap-5">
+            </section>
         </main>
-    <footer class="bg-[#DDEADE] p-12 sm:p-24">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <div class="text-center sm:text-left">
-                <img loading="lazy" class="w-32 mb-4 sm:mb-6 mx-auto sm:mx-0" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
-                <div class="flex justify-center sm:justify-start gap-6 mt-4">
-                    <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
-                    <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
-                    <a href="https://www.linkedin.com/company/hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
-                    <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
+        <footer class="bg-[#DDEADE] p-12 sm:p-24">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="text-center sm:text-left">
+                    <img loading="lazy" class="w-32 mb-4 sm:mb-6 mx-auto sm:mx-0" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                    <div class="flex justify-center sm:justify-start gap-6 mt-4">
+                        <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                        <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/company/hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                        <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="flex justify-center sm:justify-start gap-8">
+                    <div class="flex flex-col items-start">
+                        <h2 class="text-xl text-left sm:text-2xl mb-4">Quick Links</h2>
+                        <a class="text-left" href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <h2 class="text-xl sm:text-2xl mb-4">Services</h2>
+                        <a href="#">Nutritional Consultation</a>
+                        <a href="#">Fitness Class</a>
+                        <a href="#">Stress Management</a>
+                    </div>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h2 class="text-xl sm:text-2xl mb-4">Subscribe To Newsletter</h2>
+                    <input class="rounded-md mb-4 w-full p-2" type="email" placeholder="johndoe@email.com">
+                    <button class="font-semibold text-black p-3 w-full sm:w-auto bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
                 </div>
             </div>
-            <div class="flex justify-center sm:justify-start gap-8">
-                <div class="flex flex-col items-start">
-                    <h2 class="text-xl text-left sm:text-2xl mb-4">Quick Links</h2>
-                    <a class="text-left" href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="services.html">Services</a>
-                </div>
-                <div class="flex flex-col items-start">
-                    <h2 class="text-xl sm:text-2xl mb-4">Services</h2>
-                    <a href="#">Nutritional Consultation</a>
-                    <a href="#">Fitness Class</a>
-                    <a href="#">Stress Management</a>
-                </div>
+            <hr class="my-4 bg-white">
+            <div class="flex flex-col sm:flex-row justify-between text-center sm:text-left gap-2">
+                <div>HiveCare | Copyright &copy; 2024</div>
+                <div>Terms of Use | Privacy Policy</div>
             </div>
-            <div class="text-center sm:text-left">
-                <h2 class="text-xl sm:text-2xl mb-4">Subscribe To Newsletter</h2>
-                <input class="rounded-md mb-4 w-full p-2" type="email" placeholder="johndoe@email.com">
-                <button class="font-semibold text-black p-3 w-full sm:w-auto bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
-            </div>
-        </div>
-        <hr class="my-4 bg-white">
-        <div class="flex flex-col sm:flex-row justify-between text-center sm:text-left gap-2">
-            <div>HiveCare | Copyright &copy; 2024</div>
-            <div>Terms of Use | Privacy Policy</div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>
