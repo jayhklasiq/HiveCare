@@ -100,44 +100,42 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-[#DDEADE] p-24">
-            <div class="grid grid-cols-3">
-                <div>
-                    <img class="w-40 mb-6" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
-                    <div class="flex gap-6 ml-2">
-                        <a href="#"><img class="w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
-                        <a href="#"><img class="w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
-                        <a href="https://www.linkedin.com/company/hivecare/"><img class="w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
-                        <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img class="w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
-                    </div>
-                </div>
-                <div class="flex gap-10">
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl mb-4">Quick Links</h2>
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="services.html">Services</a>
-                    </div>
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl mb-4">Services</h2>
-                        <a href="#">Nutritional Consultation</a>
-                        <a href="#">Fitness Class</a>
-                        <a href="">Stress Management</a>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <h2 class="text-2xl mb-4">Subscribe To Newsletter</h2>
-                    <input class="rounded-md mb-4" type="email" placeholder="johndoe@email.com">
-                    <div>
-                        <button class="button font-semibold text-black p-4 bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
-                    </div>
+    <footer class="bg-[#DDEADE] p-12 sm:p-24">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="text-center sm:text-left">
+                <img loading="lazy" class="w-32 mb-4 sm:mb-6 mx-auto sm:mx-0" src="public/images/hivecare - Copy.PNG" alt="HiveCare Logo">
+                <div class="flex justify-center sm:justify-start gap-6 mt-4">
+                    <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/facebook-round-svgrepo-com.svg" alt="Facebook"></a>
+                    <a href="#"><img loading="lazy" class="w-6 sm:w-8" src="public/images/twitter-2-svgrepo-com.svg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/linkedin-round-svgrepo-com.svg" alt="LinkedIn"></a>
+                    <a target="_blank" href="https://www.instagram.com/official_hivecare/"><img loading="lazy" class="w-6 sm:w-8" src="public/images/instagram-circle-logo-svgrepo-com.svg" alt="Instagram"></a>
                 </div>
             </div>
-            <hr class="m-4 p-0.5 bg-[white]">
-            <div class="flex justify-between">
-                <div>HiveCare | Copyright &copy; 2024</div>
-                <div>Terms of Use | Privacy Policy</div>
+            <div class="flex justify-center sm:justify-start gap-8">
+                <div class="flex flex-col items-start">
+                    <h2 class="text-xl text-left sm:text-2xl mb-4">Quick Links</h2>
+                    <a class="text-left" href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                </div>
+                <div class="flex flex-col items-start">
+                    <h2 class="text-xl sm:text-2xl mb-4">Services</h2>
+                    <a href="#">Nutritional Consultation</a>
+                    <a href="#">Fitness Class</a>
+                    <a href="#">Stress Management</a>
+                </div>
             </div>
-        </footer>
+            <div class="text-center sm:text-left">
+                <h2 class="text-xl sm:text-2xl mb-4">Subscribe To Newsletter</h2>
+                <input class="rounded-md mb-4 w-full p-2" type="email" placeholder="johndoe@email.com">
+                <button class="font-semibold text-black p-3 w-full sm:w-auto bg-[#D8FF9A] rounded-full" type="submit">Subscribe</button>
+            </div>
+        </div>
+        <hr class="my-4 bg-white">
+        <div class="flex flex-col sm:flex-row justify-between text-center sm:text-left gap-2">
+            <div>HiveCare | Copyright &copy; 2024</div>
+            <div>Terms of Use | Privacy Policy</div>
+        </div>
+    </footer>
     </body>
 </html>
