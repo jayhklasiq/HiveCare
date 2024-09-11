@@ -81,46 +81,58 @@
             </div>
         </div>
         <main>
-            <section class="flex flex-col p-12 md:grid md:grid-rows-[1fr_auto] md:auto-rows-auto sm:p-24 sm:gap-5 bg-[#DDEADE]">
+            <section class="p-12 md:grid md:grid-cols-2 gap-10">
                 <div class="">
                     <div class="content-center text-center md:text-left">
                         <h1 class="text-5xl mb-6">Let's Help You Thrive</h1>
                         <p>Reach out to us for more information on our wellness programs, to schedule a consultation, or to ask any questions you might have. Let’s work together to create a healthier and more productive workplace.</p>
                     </div>
-                    <div class="grid grid-cols-2 grid-rows-2 mt-5">
+                    <div class="m-3 md:grid md:grid-cols-2 md:grid-rows-2 md:mt-5">
                         <div class="flex p-3 gap-4 font-bold">
-                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <img class="w-5" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
                             <div>
                                 <p>Phone Number</p>
-                                <p>+233 20 865 6648</p>
+                                <p class="font-thin">+233 20 865 6648</p>
                             </div>
                         </div>
                         <div class="flex p-3 gap-4 font-bold">
-                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <img class="w-5" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
                             <div>
                                 <p>Business Hours</p>
-                                <p>Mon-Fri - 07:00-16:00</p>
+                                <p class="font-thin">Mon-Fri - 07:00-16:00</p>
                             </div>
                         </div>
                         <div class="flex p-3 gap-4 font-bold">
-                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <img class="w-5" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
                             <div>
                                 <p>Address</p>
-                                <p>No Physical Address</p>
+                                <p class="font-thin">No Physical Address</p>
                             </div>
                         </div>
                         <div class="flex p-3 gap-4 font-bold">
-                            <img class="w-10" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
+                            <img class="w-5" src="public/images/facebook-round-svgrepo-com.svg" alt="phone-icon">
                             <div>
                                 <p>Email</p>
-                                <a href="mailto:info.hivecare@gmail.com">info.hivecare@gmail.com</a>
+                                <a class="font-thin text-wrap" href="mailto:info.hivecare@gmail.com">info.hivecare@gmail.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            </section>
-            <section class="grid grid-cols-1 sm:grid-cols-3 p-8 sm:p-24 gap-5">
+                <form class="mt-5 bg-[#EFF5F0] rounded-2xl p-6 flex flex-col gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D8FF9A] focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D8FF9A] focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium">Your Message</label>
+                        <textarea id="message" placeholder="Type your message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D8FF9A] focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-[50%] p-3 text-black bg-[#D8FF9A] rounded-full hover:bg-[#c0e68d] focus:outline-none focus:ring-2 focus:ring-[#D8FF9A] focus:ring-opacity-50"> Send Message </button>
+                </form>
             </section>
         </main>
         <footer class="bg-[#DDEADE] p-12 sm:p-24">
